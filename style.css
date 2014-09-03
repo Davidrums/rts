@@ -1,0 +1,40 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.grid{
+	width: 100%;
+	height: 100%;
+}
+
+.grid tr td{
+	height: 10%;
+	width: 10%;
+	/*background-color: #fff;*/
+}
+
+.empty{
+	border: 1px solid black;
+	background-color: #fff;
+}
+
+.teama{
+	border: 4px solid blue;
+}
+
+.teamb{
+	border: 4px solid red;
+}
+
+.tank{
+	background-color:orange;
+}
+
+.troops{
+	background-color: purple;
+}
+
+.selected{
+	background-color: #0ff;
+}
