@@ -11,6 +11,7 @@
 .grid tr td{
 	height: 10%;
 	width: 10%;
+	border-radius: 10px ;
 	/*background-color: #fff;*/
 }
 
@@ -29,12 +30,38 @@
 
 .tank{
 	background-color:orange;
+	background-image: url("images/tank.png");
+	background-size: auto 170%;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .troops{
 	background-color: purple;
+	background-image: url("images/troops.png");
+	background-size: auto 80%;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .selected{
 	background-color: #0ff;
+}
+
+.teama.tank{
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.teamb.troops{
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }

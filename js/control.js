@@ -1,4 +1,4 @@
-var s = {"col": false,"row": false};
+var s = {"col": 1,"row": 1};
 $('td').mousedown(function(event) {
     switch (event.which) {
         case 1:
@@ -26,7 +26,7 @@ function select (element) {
     // set old select to false
     var col = getCol(element);
     var row = getRow(element);
-    if (grid[row][col] == grid[window.s.col][window.s.row]) {
+    if (grid[row][col] === grid[s.col][s.row]) {
         deselect();
         return true;
     };
@@ -38,14 +38,14 @@ function select (element) {
     //execute it all
     console.log(col+":"+row)
     window.grid[row][col].selected = true;
-    window.s.row = row;
-    window.s.col = col;
+    s.row = row;
+    s.col = col;
     last_sel.col = col;
     last_sel.row = row;
     update(window.grid);
 }
 
 function deselect () {
-    window.grid[window.s.row][window.s.col]= false;
+    window.grid[window.s.row][window.s.col].selected = false;
     update(window.grid);
 }
